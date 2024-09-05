@@ -4,4 +4,9 @@
 
 body {
     margin: 0px;
+    font-family: sans-serif;
+}
+
+#root {
+    margin: 0;
 }
