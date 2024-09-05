@@ -1,10 +1,30 @@
 :root {
     box-sizing: border-box;
+    --page-background: #f5f5f5;
+    --card-background: #fff;
+    --card-border-radius: 6px;
+    --card-border: #e8e8e8;
+    --on-card-background: #f9f9f9;
+    --on-card-background-border: #e7e7e7;
+    --text-primary: #333333;
+    --text-primary-heading-size: 26px;
+    --text-primary-heading-font-weight: 700;
+    --button-primary: #e03012;
+    --button-border-radius: 3px;
+    --button-text-color: #fff;
+    --button-text-size: 15px;
 }
 
 body {
     margin: 0px;
     font-family: sans-serif;
+}
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
 }
 
 #root {

@@ -9,4 +9,13 @@ export default defineConfig({
             src: "/src",
         },
     },
+    server: {
+        proxy: {
+          '/api': {
+            target: 'https://stg.carwale.com/',
+            changeOrigin: true,
+            secure: false,
+          },
+        },
+      },
 });
