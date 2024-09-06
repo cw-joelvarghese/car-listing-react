@@ -1,4 +1,4 @@
-import { CarContext, FUEL_TYPES } from "src/App";
+import { CarContext, defaultFilterObject, FUEL_TYPES } from "src/App";
 import styles from "./Filter.module.css";
 import { useContext } from "react";
 
@@ -72,19 +72,26 @@ function BudgetFilter() {
 
     return (
         <div className={styles.budgetContainer}>
-            <input type="number" onChange={onLowerChange}/>
+            <input value={filter.budgetStart ?? ""} type="number" onChange={onLowerChange}/>
             <p>-</p>
-            <input type="number" onChange={onUpperChange}/>
+            <input value={filter.budgetEnd ?? ""} type="number" onChange={onUpperChange}/>
         </div>
     );
 }
 
 function Filter() {
+
+    const {setFilter} = useContext(CarContext)
+
+    function onClearClick() {
+        setFilter(defaultFilterObject)
+    } 
+
     return (
         <div className={styles.container}>
             <div className={styles.headingContainer}>
                 <div>Filters</div>
-                <div>Clear All</div>
+                <button className={styles.clearButton} onClick={onClearClick}>Clear All</button>
             </div>
             <div className={styles.checkboxesContainer}>
                 <p>Fuel</p>

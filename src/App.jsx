@@ -29,6 +29,7 @@ export const defaultFilterObject = {
 
 function App() {
     const [cars, setCars] = useState();
+    const [totalCount, setTotalCount] = useState(0)
     const [filter, setFilter] = useState(defaultFilterObject);
 
     function createFilterString() {
@@ -75,6 +76,7 @@ function App() {
         async function getData() {
             let filterString = createFilterString();
             var a = await (await fetch("/api/stocks?" + filterString)).json();
+            setTotalCount(a.totalCount)
             const sortedCars = sortCars(a.stocks);
             console.log(sortedCars);
             setCars(sortedCars);
@@ -88,7 +90,7 @@ function App() {
                 <div className={styles.content}>
                     <div className={styles.gridHeading}>
                         <h2 className={styles.primaryHeading}>
-                            1212 Used cars in india
+                            {totalCount} Used cars in india
                         </h2>
                     </div>
                     <div>
