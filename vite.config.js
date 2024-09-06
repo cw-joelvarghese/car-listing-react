@@ -11,11 +11,11 @@ export default defineConfig({
     },
     server: {
         proxy: {
-          '/api': {
-            target: 'https://stg.carwale.com/',
-            changeOrigin: true,
-            secure: false,
-          },
+            "/api": {
+                target: "https://stg.carwale.com/",
+                changeOrigin: true,
+                secure: false,
+            },
         },
-      },
+    },
 });

@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import styles from "./Listing.module.css";
-import { CarContext } from "src/App";
+import { CarContext, SORT_TYPES } from "src/App";
 
 function CarCard({ car }) {
     // priceNumeric
@@ -29,14 +29,22 @@ function CarCard({ car }) {
 }
 
 function Listing() {
-    const { cars } = useContext(CarContext);
+    const { filter, setFilter, cars } = useContext(CarContext);
+    function onSortChange(e) {
+        var sortValue = Number(e.target.value);  
+        setFilter((prev) => ({
+            ...prev,
+            sort: sortValue
+        }))
+      }
     return (
         <div className={styles.container}>
             <div className={styles.filterContainer}>
                 <p>Sort by: </p>
-                <select>
-                    <option>Price: Low to high</option>
-                    <option>Price: High to low</option>
+                <select onChange={onSortChange} value={filter.sort}>
+                    <option value={SORT_TYPES.UNSORTED}>Unsorted</option>
+                    <option value={SORT_TYPES.PRICE_LOW_TO_HIGH}>Price: Low to high</option>
+                    <option value={SORT_TYPES.PRICE_HIGH_TO_LOW}>Price: High to low</option>
                 </select>
             </div>
             
