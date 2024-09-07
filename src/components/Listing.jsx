@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import styles from "./Listing.module.css";
-import { CarContext, SORT_TYPES } from "src/App";
+import { CarContext } from "src/App";
+import { SORT_TYPES } from 'src/utils/appUtils';
 
 function CarCard({ car }) {
     // priceNumeric

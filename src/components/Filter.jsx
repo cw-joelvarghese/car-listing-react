@@ -1,14 +1,10 @@
-import { CarContext, defaultFilterObject, FUEL_TYPES } from "src/App";
+import { CarContext } from "src/App";
 import styles from "./Filter.module.css";
 import { useContext } from "react";
+import { removeItemFromArray } from "src/utils/filterUtils";
+import { defaultFilterObject, FUEL_TYPES } from "src/utils/appUtils";
 
-function removeItemFromArray(array, item) {
-    var index = array.indexOf(item);
-    if (index !== -1) {
-        array.splice(index, 1);
-    }
-    return array;
-}
+export function FuelCheckboxFilter({ fuelType, fuelName }) {
 
 function FuelCheckboxFilter({ fuelType, fuelName }) {
     const { filter, setFilter } = useContext(CarContext);
@@ -36,17 +32,16 @@ function FuelCheckboxFilter({ fuelType, fuelName }) {
 }
 
 function CheckboxFilterItem({ name, onClick, checked }) {
-    let r = (Math.random() + 1).toString(36).substring(7);
     return (
         <div className={styles.checkboxContainer}>
             <input
                 type="checkbox"
                 checked={checked}
-                id={r}
+                id={name}
                 className={styles.checkbox}
                 onChange={onClick}
             />
-            <label className={styles.checkboxContainer} htmlFor={r}>
+            <label className={styles.checkboxLabel} htmlFor={name}>
                 {name}
             </label>
         </div>
@@ -59,39 +54,48 @@ function BudgetFilter() {
     function onLowerChange(e) {
         setFilter((prev) => ({
             ...prev,
-            budgetStart: Number(e.target.value)
-        }))
+            budgetStart: Number(e.target.value),
+        }));
     }
 
     function onUpperChange(e) {
         setFilter((prev) => ({
             ...prev,
-            budgetEnd: Number(e.target.value)
-        }))
+            budgetEnd: Number(e.target.value),
+        }));
     }
 
     return (
         <div className={styles.budgetContainer}>
-            <input value={filter.budgetStart ?? ""} type="number" onChange={onLowerChange}/>
+            <input
+                value={filter.budgetStart ?? ""}
+                type="number"
+                onChange={onLowerChange}
+            />
             <p>-</p>
-            <input value={filter.budgetEnd ?? ""} type="number" onChange={onUpperChange}/>
+            <input
+                value={filter.budgetEnd ?? ""}
+                type="number"
+                onChange={onUpperChange}
+            />
         </div>
     );
 }
 
 function Filter() {
-
-    const {setFilter} = useContext(CarContext)
+    const { setFilter } = useContext(CarContext);
 
     function onClearClick() {
-        setFilter(defaultFilterObject)
-    } 
+        setFilter(defaultFilterObject);
+    }
 
     return (
         <div className={styles.container}>
             <div className={styles.headingContainer}>
                 <div>Filters</div>
-                <button className={styles.clearButton} onClick={onClearClick}>Clear All</button>
+                <button className={styles.clearButton} onClick={onClearClick}>
+                    Clear All
+                </button>
             </div>
             <div className={styles.checkboxesContainer}>
                 <p>Fuel</p>
