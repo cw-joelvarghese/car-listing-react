@@ -5,8 +5,6 @@ import { removeItemFromArray } from "src/utils/filterUtils";
 import { defaultFilterObject, FUEL_TYPES } from "src/utils/appUtils";
 
 export function FuelCheckboxFilter({ fuelType, fuelName }) {
-
-function FuelCheckboxFilter({ fuelType, fuelName }) {
     const { filter, setFilter } = useContext(CarContext);
     function onClick(e) {
         const checked = e.target.checked;
@@ -31,7 +29,7 @@ function FuelCheckboxFilter({ fuelType, fuelName }) {
     );
 }
 
-function CheckboxFilterItem({ name, onClick, checked }) {
+export function CheckboxFilterItem({ name, onClick, checked }) {
     return (
         <div className={styles.checkboxContainer}>
             <input
@@ -48,7 +46,7 @@ function CheckboxFilterItem({ name, onClick, checked }) {
     );
 }
 
-function BudgetFilter() {
+export function BudgetFilter() {
     const { filter, setFilter } = useContext(CarContext);
 
     function onLowerChange(e) {

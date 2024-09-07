@@ -3,7 +3,7 @@ import styles from "./Listing.module.css";
 import { CarContext } from "src/App";
 import { SORT_TYPES } from 'src/utils/appUtils';
 
-function CarCard({ car }) {
+export function CarCard({ car }) {
     // priceNumeric
     return (
         <div className={styles.carCard}>

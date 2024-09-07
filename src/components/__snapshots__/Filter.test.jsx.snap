@@ -1,0 +1,1055 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BudgetFilter component renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="_container_e8fa16"
+      >
+        <div
+          class="_headingContainer_e8fa16"
+        >
+          <div>
+            Filters
+          </div>
+          <button
+            class="_clearButton_e8fa16"
+          >
+            Clear All
+          </button>
+        </div>
+        <div
+          class="_checkboxesContainer_e8fa16"
+        >
+          <p>
+            Fuel
+          </p>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="PETROL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="PETROL"
+            >
+              PETROL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="DIESEL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="DIESEL"
+            >
+              DIESEL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="CNG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="CNG"
+            >
+              CNG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="LPG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="LPG"
+            >
+              LPG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="ELECTRIC"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="ELECTRIC"
+            >
+              ELECTRIC
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="HYBRID"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="HYBRID"
+            >
+              HYBRID
+            </label>
+          </div>
+          <p>
+            Budget
+          </p>
+          <div
+            class="_budgetContainer_e8fa16"
+          >
+            <input
+              type="number"
+              value=""
+            />
+            <p>
+              -
+            </p>
+            <input
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="_budgetContainer_e8fa16"
+      >
+        <input
+          type="number"
+          value=""
+        />
+        <p>
+          -
+        </p>
+        <input
+          type="number"
+          value=""
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="_budgetContainer_e8fa16"
+    >
+      <input
+        type="number"
+        value=""
+      />
+      <p>
+        -
+      </p>
+      <input
+        type="number"
+        value=""
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`CheckboxFilterItem component renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="_container_e8fa16"
+      >
+        <div
+          class="_headingContainer_e8fa16"
+        >
+          <div>
+            Filters
+          </div>
+          <button
+            class="_clearButton_e8fa16"
+          >
+            Clear All
+          </button>
+        </div>
+        <div
+          class="_checkboxesContainer_e8fa16"
+        >
+          <p>
+            Fuel
+          </p>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="PETROL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="PETROL"
+            >
+              PETROL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="DIESEL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="DIESEL"
+            >
+              DIESEL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="CNG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="CNG"
+            >
+              CNG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="LPG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="LPG"
+            >
+              LPG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="ELECTRIC"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="ELECTRIC"
+            >
+              ELECTRIC
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="HYBRID"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="HYBRID"
+            >
+              HYBRID
+            </label>
+          </div>
+          <p>
+            Budget
+          </p>
+          <div
+            class="_budgetContainer_e8fa16"
+          >
+            <input
+              type="number"
+              value=""
+            />
+            <p>
+              -
+            </p>
+            <input
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="_budgetContainer_e8fa16"
+      >
+        <input
+          type="number"
+          value=""
+        />
+        <p>
+          -
+        </p>
+        <input
+          type="number"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        class="_checkboxContainer_e8fa16"
+      >
+        <input
+          class="_checkbox_e8fa16"
+          id="PETROL"
+          type="checkbox"
+        />
+        <label
+          class="_checkboxLabel_e8fa16"
+          for="PETROL"
+        >
+          PETROL
+        </label>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="_checkboxContainer_e8fa16"
+    >
+      <input
+        class="_checkbox_e8fa16"
+        id="PETROL"
+        type="checkbox"
+      />
+      <label
+        class="_checkboxLabel_e8fa16"
+        for="PETROL"
+      >
+        PETROL
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Filter component renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="_container_e8fa16"
+      >
+        <div
+          class="_headingContainer_e8fa16"
+        >
+          <div>
+            Filters
+          </div>
+          <button
+            class="_clearButton_e8fa16"
+          >
+            Clear All
+          </button>
+        </div>
+        <div
+          class="_checkboxesContainer_e8fa16"
+        >
+          <p>
+            Fuel
+          </p>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="PETROL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="PETROL"
+            >
+              PETROL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="DIESEL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="DIESEL"
+            >
+              DIESEL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="CNG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="CNG"
+            >
+              CNG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="LPG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="LPG"
+            >
+              LPG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="ELECTRIC"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="ELECTRIC"
+            >
+              ELECTRIC
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="HYBRID"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="HYBRID"
+            >
+              HYBRID
+            </label>
+          </div>
+          <p>
+            Budget
+          </p>
+          <div
+            class="_budgetContainer_e8fa16"
+          >
+            <input
+              type="number"
+              value=""
+            />
+            <p>
+              -
+            </p>
+            <input
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="_container_e8fa16"
+    >
+      <div
+        class="_headingContainer_e8fa16"
+      >
+        <div>
+          Filters
+        </div>
+        <button
+          class="_clearButton_e8fa16"
+        >
+          Clear All
+        </button>
+      </div>
+      <div
+        class="_checkboxesContainer_e8fa16"
+      >
+        <p>
+          Fuel
+        </p>
+        <div
+          class="_checkboxContainer_e8fa16"
+        >
+          <input
+            class="_checkbox_e8fa16"
+            id="PETROL"
+            type="checkbox"
+          />
+          <label
+            class="_checkboxLabel_e8fa16"
+            for="PETROL"
+          >
+            PETROL
+          </label>
+        </div>
+        <div
+          class="_checkboxContainer_e8fa16"
+        >
+          <input
+            class="_checkbox_e8fa16"
+            id="DIESEL"
+            type="checkbox"
+          />
+          <label
+            class="_checkboxLabel_e8fa16"
+            for="DIESEL"
+          >
+            DIESEL
+          </label>
+        </div>
+        <div
+          class="_checkboxContainer_e8fa16"
+        >
+          <input
+            class="_checkbox_e8fa16"
+            id="CNG"
+            type="checkbox"
+          />
+          <label
+            class="_checkboxLabel_e8fa16"
+            for="CNG"
+          >
+            CNG
+          </label>
+        </div>
+        <div
+          class="_checkboxContainer_e8fa16"
+        >
+          <input
+            class="_checkbox_e8fa16"
+            id="LPG"
+            type="checkbox"
+          />
+          <label
+            class="_checkboxLabel_e8fa16"
+            for="LPG"
+          >
+            LPG
+          </label>
+        </div>
+        <div
+          class="_checkboxContainer_e8fa16"
+        >
+          <input
+            class="_checkbox_e8fa16"
+            id="ELECTRIC"
+            type="checkbox"
+          />
+          <label
+            class="_checkboxLabel_e8fa16"
+            for="ELECTRIC"
+          >
+            ELECTRIC
+          </label>
+        </div>
+        <div
+          class="_checkboxContainer_e8fa16"
+        >
+          <input
+            class="_checkbox_e8fa16"
+            id="HYBRID"
+            type="checkbox"
+          />
+          <label
+            class="_checkboxLabel_e8fa16"
+            for="HYBRID"
+          >
+            HYBRID
+          </label>
+        </div>
+        <p>
+          Budget
+        </p>
+        <div
+          class="_budgetContainer_e8fa16"
+        >
+          <input
+            type="number"
+            value=""
+          />
+          <p>
+            -
+          </p>
+          <input
+            type="number"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`FuelCheckboxFilter component renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="_container_e8fa16"
+      >
+        <div
+          class="_headingContainer_e8fa16"
+        >
+          <div>
+            Filters
+          </div>
+          <button
+            class="_clearButton_e8fa16"
+          >
+            Clear All
+          </button>
+        </div>
+        <div
+          class="_checkboxesContainer_e8fa16"
+        >
+          <p>
+            Fuel
+          </p>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="PETROL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="PETROL"
+            >
+              PETROL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="DIESEL"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="DIESEL"
+            >
+              DIESEL
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="CNG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="CNG"
+            >
+              CNG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="LPG"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="LPG"
+            >
+              LPG
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="ELECTRIC"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="ELECTRIC"
+            >
+              ELECTRIC
+            </label>
+          </div>
+          <div
+            class="_checkboxContainer_e8fa16"
+          >
+            <input
+              class="_checkbox_e8fa16"
+              id="HYBRID"
+              type="checkbox"
+            />
+            <label
+              class="_checkboxLabel_e8fa16"
+              for="HYBRID"
+            >
+              HYBRID
+            </label>
+          </div>
+          <p>
+            Budget
+          </p>
+          <div
+            class="_budgetContainer_e8fa16"
+          >
+            <input
+              type="number"
+              value=""
+            />
+            <p>
+              -
+            </p>
+            <input
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        class="_budgetContainer_e8fa16"
+      >
+        <input
+          type="number"
+          value=""
+        />
+        <p>
+          -
+        </p>
+        <input
+          type="number"
+          value=""
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        class="_checkboxContainer_e8fa16"
+      >
+        <input
+          class="_checkbox_e8fa16"
+          id="PETROL"
+          type="checkbox"
+        />
+        <label
+          class="_checkboxLabel_e8fa16"
+          for="PETROL"
+        >
+          PETROL
+        </label>
+      </div>
+    </div>
+    <div>
+      <div
+        class="_checkboxContainer_e8fa16"
+      >
+        <input
+          class="_checkbox_e8fa16"
+          id="PETROL"
+          type="checkbox"
+        />
+        <label
+          class="_checkboxLabel_e8fa16"
+          for="PETROL"
+        >
+          PETROL
+        </label>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="_checkboxContainer_e8fa16"
+    >
+      <input
+        class="_checkbox_e8fa16"
+        id="PETROL"
+        type="checkbox"
+      />
+      <label
+        class="_checkboxLabel_e8fa16"
+        for="PETROL"
+      >
+        PETROL
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
