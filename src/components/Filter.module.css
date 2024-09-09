@@ -4,6 +4,8 @@
     width: 100%;
     padding: 12px;
     border-radius: var(--card-border-radius);
+    position: sticky;
+    top: 10px;
 }
 
 .clearButton {
@@ -27,6 +29,11 @@
     row-gap: 16px;
     padding: 16px 0;
     justify-content: space-between;
+}
+
+.checkboxContainer {
+    display: flex;
+    column-gap: 8px;
 }
 
 .checkboxLabel {

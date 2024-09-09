@@ -1,36 +1,30 @@
 import { render } from "@testing-library/react";
-import { CarContext } from "src/App";
+import { Provider } from "react-redux";
 import Filter, {
     BudgetFilter,
     CheckboxFilterItem,
     FuelCheckboxFilter,
 } from "src/components/Filter";
-import { defaultFilterObject, FUEL_TYPES } from "src/utils/appUtils";
+import store from "src/store";
+import { FUEL_TYPES } from "src/utils/appUtils";
 import { expect, test } from "vitest";
+import '@testing-library/jest-dom'
 
-let filter = defaultFilterObject;
-function setFilter(val) {
-    if (typeof val === "function") {
-        filter = val(filter);
-        return;
-    }
-    filter = val;
-}
 
 test("Filter component renders correctly", () => {
     const tree = render(
-        <CarContext.Provider value={{ filter, setFilter }}>
+        <Provider store={store}>
             <Filter />
-        </CarContext.Provider>
+        </Provider>
     );
     expect(tree).toMatchSnapshot();
 });
 
 test("BudgetFilter component renders correctly", () => {
     const tree = render(
-        <CarContext.Provider value={{ filter, setFilter }}>
+        <Provider store={store}>
             <BudgetFilter />
-        </CarContext.Provider>
+        </Provider>
     );
     expect(tree).toMatchSnapshot();
 });
@@ -48,9 +42,10 @@ test("CheckboxFilterItem component renders correctly", () => {
 
 test("FuelCheckboxFilter component renders correctly", () => {
     const tree = render(
-        <CarContext.Provider value={{ filter, setFilter }}>
+        <Provider store={store}>
             <FuelCheckboxFilter fuelType={FUEL_TYPES.PETROL} fuelName={"PETROL"} />
-        </CarContext.Provider>
+        </Provider>
     );
+    expect(tree.getByText(/Petrol/i)).toBeInTheDocument()
     expect(tree).toMatchSnapshot();
 });

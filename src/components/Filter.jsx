@@ -1,24 +1,22 @@
-import { CarContext } from "src/App";
 import styles from "./Filter.module.css";
-import { useContext } from "react";
-import { removeItemFromArray } from "src/utils/filterUtils";
 import { defaultFilterObject, FUEL_TYPES } from "src/utils/appUtils";
+import { useDispatch, useSelector } from "react-redux";
+import { addFuel, removeFuel, setBudgetEnd, setBudgetStart, setFilter } from "src/reducers/filterReducer";
 
 export function FuelCheckboxFilter({ fuelType, fuelName }) {
-    const { filter, setFilter } = useContext(CarContext);
+    const filter = useSelector((state) => state.filter);
+    const dispatch = useDispatch();
     function onClick(e) {
         const checked = e.target.checked;
         if (checked) {
-            setFilter((prev) => ({
-                ...prev,
-                fuel: [...prev.fuel, fuelType],
-            }));
+            dispatch(
+                addFuel(fuelType)
+            );
             return;
         }
-        setFilter((prev) => ({
-            ...prev,
-            fuel: removeItemFromArray([...prev.fuel], fuelType),
-        }));
+        dispatch(
+            removeFuel(fuelType)
+        );
     }
     return (
         <CheckboxFilterItem
@@ -47,20 +45,19 @@ export function CheckboxFilterItem({ name, onClick, checked }) {
 }
 
 export function BudgetFilter() {
-    const { filter, setFilter } = useContext(CarContext);
+    const filter = useSelector((state) => state.filter);
+    const dispatch = useDispatch();
 
     function onLowerChange(e) {
-        setFilter((prev) => ({
-            ...prev,
-            budgetStart: Number(e.target.value),
-        }));
+        dispatch(
+            setBudgetStart(Number(e.target.value))
+        );
     }
 
     function onUpperChange(e) {
-        setFilter((prev) => ({
-            ...prev,
-            budgetEnd: Number(e.target.value),
-        }));
+        dispatch(
+            setBudgetEnd(Number(e.target.value))
+        );
     }
 
     return (
@@ -81,10 +78,10 @@ export function BudgetFilter() {
 }
 
 function Filter() {
-    const { setFilter } = useContext(CarContext);
+    const dispatch = useDispatch();
 
     function onClearClick() {
-        setFilter(defaultFilterObject);
+        dispatch(setFilter(defaultFilterObject));
     }
 
     return (

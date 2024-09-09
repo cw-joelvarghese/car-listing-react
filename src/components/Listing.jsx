@@ -1,7 +1,9 @@
-import { useContext } from "react";
+import { useEffect } from "react";
 import styles from "./Listing.module.css";
-import { CarContext } from "src/App";
-import { SORT_TYPES } from 'src/utils/appUtils';
+import { getDataWithFilter, SORT_TYPES } from "src/utils/appUtils";
+import { useDispatch, useSelector } from "react-redux";
+import { setSort } from "src/reducers/filterReducer";
+import { setCars } from "src/reducers/carsReducer";
 
 export function CarCard({ car }) {
     // priceNumeric
@@ -13,12 +15,15 @@ export function CarCard({ car }) {
                     <h3>
                         {car.makeYear} {car.makeName}
                     </h3>
-                    <p>{car.km} km | {car.fuel} | {car.areaName}, {car.cityName}</p>
+                    <p>
+                        {car.km} km | {car.fuel} | {car.areaName},{" "}
+                        {car.cityName}
+                    </p>
                 </div>
 
                 <div className={styles.carEMIAndPrice}>
                     <p>Rs. {car.price}</p>
-                    <p>{car.emiText	}</p>
+                    <p>{car.emiText}</p>
                 </div>
                 <p>Make Offer</p>
                 <button className={styles.carSellerButton}>
@@ -30,28 +35,40 @@ export function CarCard({ car }) {
 }
 
 function Listing() {
-    const { filter, setFilter, cars } = useContext(CarContext);
+    const filter = useSelector((state) => state.filter);
+    const dispatch = useDispatch();
+    const cars = useSelector((state) => state.cars);
     function onSortChange(e) {
-        var sortValue = Number(e.target.value);  
-        setFilter((prev) => ({
-            ...prev,
-            sort: sortValue
-        }))
-      }
+        var sortValue = Number(e.target.value);
+        dispatch(
+            setSort(sortValue)
+        );
+    }
+
+    useEffect(() => {
+        getDataWithFilter(filter).then((data) => {
+            dispatch(setCars(data.stocks))
+        })
+    }, [filter]);
+
     return (
         <div className={styles.container}>
             <div className={styles.filterContainer}>
                 <p>Sort by: </p>
                 <select onChange={onSortChange} value={filter.sort}>
                     <option value={SORT_TYPES.UNSORTED}>Unsorted</option>
-                    <option value={SORT_TYPES.PRICE_LOW_TO_HIGH}>Price: Low to high</option>
-                    <option value={SORT_TYPES.PRICE_HIGH_TO_LOW}>Price: High to low</option>
+                    <option value={SORT_TYPES.PRICE_LOW_TO_HIGH}>
+                        Price: Low to high
+                    </option>
+                    <option value={SORT_TYPES.PRICE_HIGH_TO_LOW}>
+                        Price: High to low
+                    </option>
                 </select>
             </div>
-            
-            {cars?.map((car) => 
-                <CarCard key={car.profileId	} car={car} />
-            )}
+
+            {cars?.map((car) => (
+                <CarCard key={car.profileId} car={car} />
+            ))}
         </div>
     );
 }

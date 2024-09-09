@@ -6,130 +6,6 @@ exports[`CarCard component renders correctly 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="_container_187b3e"
-      >
-        <div
-          class="_filterContainer_187b3e"
-        >
-          <p>
-            Sort by: 
-          </p>
-          <select>
-            <option
-              value="1"
-            >
-              Unsorted
-            </option>
-            <option
-              value="2"
-            >
-              Price: Low to high
-            </option>
-            <option
-              value="3"
-            >
-              Price: High to low
-            </option>
-          </select>
-        </div>
-        <div
-          class="_carCard_187b3e"
-        >
-          <img
-            class="_carImage_187b3e"
-            src="https://image.com"
-          />
-          <div
-            class="_carInfo_187b3e"
-          >
-            <div>
-              <h3>
-                2002
-                 
-                Suzuki
-              </h3>
-              <p>
-                200
-                 km | 
-                1
-                 | 
-                Worli
-                , 
-                Mumbai
-              </p>
-            </div>
-            <div
-              class="_carEMIAndPrice_187b3e"
-            >
-              <p>
-                Rs. 
-                12
-              </p>
-              <p>
-                Starts from Rs. 12 Lakh
-              </p>
-            </div>
-            <p>
-              Make Offer
-            </p>
-            <button
-              class="_carSellerButton_187b3e"
-            >
-              Get Seller info
-            </button>
-          </div>
-        </div>
-        <div
-          class="_carCard_187b3e"
-        >
-          <img
-            class="_carImage_187b3e"
-            src="https://image.com"
-          />
-          <div
-            class="_carInfo_187b3e"
-          >
-            <div>
-              <h3>
-                2002
-                 
-                Suzuki
-              </h3>
-              <p>
-                200
-                 km | 
-                1
-                 | 
-                Worli
-                , 
-                Mumbai
-              </p>
-            </div>
-            <div
-              class="_carEMIAndPrice_187b3e"
-            >
-              <p>
-                Rs. 
-                12
-              </p>
-              <p>
-                Starts from Rs. 12 Lakh
-              </p>
-            </div>
-            <p>
-              Make Offer
-            </p>
-            <button
-              class="_carSellerButton_187b3e"
-            >
-              Get Seller info
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div
         class="_carCard_187b3e"
       >
         <img
@@ -151,7 +27,8 @@ exports[`CarCard component renders correctly 1`] = `
               1
                | 
               Worli
-              , 
+              ,
+               
               Mumbai
             </p>
           </div>
@@ -201,7 +78,8 @@ exports[`CarCard component renders correctly 1`] = `
             1
              | 
             Worli
-            , 
+            ,
+             
             Mumbai
           </p>
         </div>
@@ -335,7 +213,8 @@ exports[`Listing component renders correctly 1`] = `
                 1
                  | 
                 Worli
-                , 
+                ,
+                 
                 Mumbai
               </p>
             </div>
@@ -374,7 +253,7 @@ exports[`Listing component renders correctly 1`] = `
               <h3>
                 2002
                  
-                Suzuki
+                Mazda
               </h3>
               <p>
                 200
@@ -382,7 +261,8 @@ exports[`Listing component renders correctly 1`] = `
                 1
                  | 
                 Worli
-                , 
+                ,
+                 
                 Mumbai
               </p>
             </div>
@@ -460,7 +340,8 @@ exports[`Listing component renders correctly 1`] = `
               1
                | 
               Worli
-              , 
+              ,
+               
               Mumbai
             </p>
           </div>
@@ -499,7 +380,7 @@ exports[`Listing component renders correctly 1`] = `
             <h3>
               2002
                
-              Suzuki
+              Mazda
             </h3>
             <p>
               200
@@ -507,7 +388,8 @@ exports[`Listing component renders correctly 1`] = `
               1
                | 
               Worli
-              , 
+              ,
+               
               Mumbai
             </p>
           </div>
