@@ -6,7 +6,7 @@ import { addFuel, removeFuel, setBudgetEnd, setBudgetStart, setFilter } from "sr
 export function FuelCheckboxFilter({ fuelType, fuelName }) {
     const filter = useSelector((state) => state.filter);
     const dispatch = useDispatch();
-    function onClick(e) {
+    function onCheckboxClick(e) {
         const checked = e.target.checked;
         if (checked) {
             dispatch(
@@ -21,7 +21,7 @@ export function FuelCheckboxFilter({ fuelType, fuelName }) {
     return (
         <CheckboxFilterItem
             name={fuelName}
-            onClick={onClick}
+            onClick={onCheckboxClick}
             checked={filter.fuel.includes(fuelType)}
         />
     );

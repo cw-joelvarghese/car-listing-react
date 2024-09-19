@@ -9,7 +9,6 @@ import { setCars } from "./reducers/carsReducer";
 export const CarContext = createContext();
 
 function App() {
-    // const [cars, setCars] = useState();
     const [totalCount, setTotalCount] = useState(0);
     const [filter, setFilter] = useState(defaultFilterObject);
     const cars = useSelector((state) => state.cars);
@@ -17,7 +16,6 @@ function App() {
 
     useEffect(() => {
         getDataWithFilter(filter).then((data) => {
-            // setCars(data.stocks);
             dispatch(setCars(data.stocks));
             setTotalCount(data.totalCount);
         });

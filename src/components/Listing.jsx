@@ -6,7 +6,6 @@ import { setSort } from "src/reducers/filterReducer";
 import { setCars } from "src/reducers/carsReducer";
 
 export function CarCard({ car }) {
-    // priceNumeric
     return (
         <div className={styles.carCard}>
             <img src={car.imageUrl} className={styles.carImage} />
