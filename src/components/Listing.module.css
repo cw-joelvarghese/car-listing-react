@@ -19,6 +19,12 @@
     border-radius: var(--card-border-radius);
 }
 
+.filterSelect {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
 .carCard {
     background-color: var(--card-background);
     border-radius: var(--card-border-radius);

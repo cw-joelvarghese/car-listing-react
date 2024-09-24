@@ -54,7 +54,7 @@ function Listing() {
         <div className={styles.container}>
             <div className={styles.filterContainer}>
                 <p>Sort by: </p>
-                <select onChange={onSortChange} value={filter.sort}>
+                <select className={styles.filterSelect} onChange={onSortChange} value={filter.sort}>
                     <option value={SORT_TYPES.UNSORTED}>Unsorted</option>
                     <option value={SORT_TYPES.PRICE_LOW_TO_HIGH}>
                         Price: Low to high
@@ -65,8 +65,8 @@ function Listing() {
                 </select>
             </div>
 
-            {cars?.map((car) => (
-                <CarCard key={car.profileId} car={car} />
+            {cars?.map((car, index) => (
+                <CarCard key={index} car={car} />
             ))}
         </div>
     );

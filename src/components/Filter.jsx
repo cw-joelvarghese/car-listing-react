@@ -1,7 +1,13 @@
 import styles from "./Filter.module.css";
 import { defaultFilterObject, FUEL_TYPES } from "src/utils/appUtils";
 import { useDispatch, useSelector } from "react-redux";
-import { addFuel, removeFuel, setBudgetEnd, setBudgetStart, setFilter } from "src/reducers/filterReducer";
+import {
+    addFuel,
+    removeFuel,
+    setBudgetEnd,
+    setBudgetStart,
+    setFilter,
+} from "src/reducers/filterReducer";
 
 export function FuelCheckboxFilter({ fuelType, fuelName }) {
     const filter = useSelector((state) => state.filter);
@@ -9,14 +15,10 @@ export function FuelCheckboxFilter({ fuelType, fuelName }) {
     function onCheckboxClick(e) {
         const checked = e.target.checked;
         if (checked) {
-            dispatch(
-                addFuel(fuelType)
-            );
+            dispatch(addFuel(fuelType));
             return;
         }
-        dispatch(
-            removeFuel(fuelType)
-        );
+        dispatch(removeFuel(fuelType));
     }
     return (
         <CheckboxFilterItem
@@ -49,26 +51,24 @@ export function BudgetFilter() {
     const dispatch = useDispatch();
 
     function onLowerChange(e) {
-        dispatch(
-            setBudgetStart(Number(e.target.value))
-        );
+        dispatch(setBudgetStart(Number(e.target.value)));
     }
 
     function onUpperChange(e) {
-        dispatch(
-            setBudgetEnd(Number(e.target.value))
-        );
+        dispatch(setBudgetEnd(Number(e.target.value)));
     }
 
     return (
         <div className={styles.budgetContainer}>
             <input
+                className={styles.budgetInput}
                 value={filter.budgetStart ?? ""}
                 type="number"
                 onChange={onLowerChange}
             />
             <p>-</p>
             <input
+                className={styles.budgetInput}
                 value={filter.budgetEnd ?? ""}
                 type="number"
                 onChange={onUpperChange}
